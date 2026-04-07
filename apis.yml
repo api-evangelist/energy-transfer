@@ -1,16 +1,14 @@
 aid: energy-transfer
-url: 
-  https://raw.githubusercontent.com/api-evangelist/energy-transfer/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/energy-transfer/refs/heads/main/apis.yml
 apis:
   - aid: energy-transfer:messenger-api
     name: Energy Transfer Messenger+ API
     tags:
       - Energy
-      - Pipelines
       - Gas Scheduling
       - Messaging
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+      - Pipelines
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://dev.messenger.energytransfer.com
     humanURL: https://dev.messenger.energytransfer.com/
     properties:

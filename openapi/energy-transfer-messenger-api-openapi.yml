@@ -13,10 +13,10 @@ servers:
 tags:
   - name: Nominations
     description: Manage gas pipeline nominations.
-  - name: Schedules
-    description: Access gas scheduling and capacity data.
   - name: Pipelines
     description: Retrieve pipeline information and status.
+  - name: Schedules
+    description: Access gas scheduling and capacity data.
 paths:
   /nominations:
     get:
