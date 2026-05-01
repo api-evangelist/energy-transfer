@@ -1,5 +1,21 @@
 aid: energy-transfer
+name: Energy Transfer
 url: https://raw.githubusercontent.com/api-evangelist/energy-transfer/refs/heads/main/apis.yml
+modified: '2026-04-28'
+tags:
+  - Energy
+  - Pipelines
+  - Midstream
+  - Gas Scheduling
+type: Contract
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+created: '2026-03-21'
+position: Consumer
+specificationVersion: '0.20'
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
 apis:
   - aid: energy-transfer:messenger-api
     name: Energy Transfer Messenger+ API
