@@ -1,0 +1,159 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Energy Transfer Messenger+ API
+  description: The Energy Transfer Messenger+ API provides programmatic access to Energy Transfer's pipeline messaging and
+    gas scheduling platform. The API enables partners and shippers to manage gas nominations, scheduling, and pipeline capacity
+    through automated integrations, reducing processing times from 90 minutes to approximately 12 minutes.
+  tags:
+  - Energy
+  - Transfer
+  - API
+  created: '2026-05-06'
+  modified: '2026-05-06'
+capability:
+  consumes:
+  - type: http
+    namespace: energy-transfer
+    baseUri: https://dev.messenger.energytransfer.com
+    description: Energy Transfer Messenger+ API HTTP API.
+    authentication:
+      type: bearer
+      token: '{{ENERGY_TRANSFER_TOKEN}}'
+    resources:
+    - name: nominations
+      path: /nominations
+      operations:
+      - name: listnominations
+        method: GET
+        description: List nominations
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: createnomination
+        method: POST
+        description: Create a nomination
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: schedules
+      path: /schedules
+      operations:
+      - name: listschedules
+        method: GET
+        description: List schedules
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: pipelines
+      path: /pipelines
+      operations:
+      - name: listpipelines
+        method: GET
+        description: List pipelines
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: energy-transfer-rest
+    description: REST adapter for Energy Transfer Messenger+ API.
+    resources:
+    - path: /nominations
+      name: listnominations
+      operations:
+      - method: GET
+        name: listnominations
+        description: List nominations
+        call: energy-transfer.listnominations
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /nominations
+      name: createnomination
+      operations:
+      - method: POST
+        name: createnomination
+        description: Create a nomination
+        call: energy-transfer.createnomination
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /schedules
+      name: listschedules
+      operations:
+      - method: GET
+        name: listschedules
+        description: List schedules
+        call: energy-transfer.listschedules
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /pipelines
+      name: listpipelines
+      operations:
+      - method: GET
+        name: listpipelines
+        description: List pipelines
+        call: energy-transfer.listpipelines
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: energy-transfer-mcp
+    transport: http
+    description: MCP adapter for Energy Transfer Messenger+ API for AI agent use.
+    tools:
+    - name: listnominations
+      description: List nominations
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: energy-transfer.listnominations
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: createnomination
+      description: Create a nomination
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: energy-transfer.createnomination
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: listschedules
+      description: List schedules
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: energy-transfer.listschedules
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: listpipelines
+      description: List pipelines
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: energy-transfer.listpipelines
+      outputParameters:
+      - type: object
+        mapping: $.
+binds:
+- namespace: env
+  keys:
+    ENERGY_TRANSFER_TOKEN: ENERGY_TRANSFER_TOKEN
