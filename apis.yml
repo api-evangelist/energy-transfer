@@ -3,10 +3,11 @@ name: Energy Transfer
 url: https://raw.githubusercontent.com/api-evangelist/energy-transfer/refs/heads/main/apis.yml
 modified: '2026-05-19'
 tags:
-- Energy
-- Pipelines
-- Midstream
-- Gas Scheduling
+  - Energy
+  - Pipelines
+  - Midstream
+  - Gas Scheduling
+  - Fortune 100
 kind: contract
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -14,36 +15,32 @@ created: '2026-03-21'
 position: Consumer
 specificationVersion: '0.20'
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
 common:
-- type: LinkedIn
-  url: https://www.linkedin.com/company/energy-transfer
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/energy-transfer
 apis:
-- aid: energy-transfer:messenger-api
-  name: Energy Transfer Messenger+ API
-  tags:
-  - Energy
-  - Gas Scheduling
-  - Messaging
-  - Pipelines
-  image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-  baseURL: https://dev.messenger.energytransfer.com
-  humanURL: https://dev.messenger.energytransfer.com/
-  properties:
-  - url: https://dev.messenger.energytransfer.com/
-    type: Documentation
-  - url: openapi/energy-transfer-messenger-api-openapi.yml
-    type: OpenAPI
-  - type: NaftikoCapability
-    url: capabilities/messenger-nominations.yaml
-  - type: NaftikoCapability
-    url: capabilities/messenger-pipelines.yaml
-  - type: NaftikoCapability
-    url: capabilities/messenger-schedules.yaml
-  description: The Energy Transfer Messenger+ API provides programmatic access to Energy Transfer's pipeline messaging and
-    gas scheduling platform. Energy Transfer operates one of the largest pipeline networks in the United States, and the Messenger+
-    platform enables partners and shippers to manage gas scheduling, nominations, and pipeline capacity through automated
-    API integrations, significantly reducing manual processing times.
-description: Energy Transfer is one of the largest and most diversified midstream energy companies in North America, owning
-  and operating natural gas, crude oil, NGL, and refined products pipelines, terminals, and storage facilities.
+  - aid: energy-transfer:messenger-api
+    name: Energy Transfer Messenger+ API
+    tags:
+      - Energy
+      - Gas Scheduling
+      - Messaging
+      - Pipelines
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://dev.messenger.energytransfer.com
+    humanURL: https://dev.messenger.energytransfer.com/
+    properties:
+      - url: https://dev.messenger.energytransfer.com/
+        type: Documentation
+      - url: openapi/energy-transfer-messenger-api-openapi.yml
+        type: OpenAPI
+    description: >-
+      The Energy Transfer Messenger+ API provides programmatic access to Energy Transfer's pipeline messaging and gas
+      scheduling platform. Energy Transfer operates one of the largest pipeline networks in the United States, and the
+      Messenger+ platform enables partners and shippers to manage gas scheduling, nominations, and pipeline capacity
+      through automated API integrations, significantly reducing manual processing times.
+description: >-
+  Energy Transfer is one of the largest and most diversified midstream energy companies in North America, owning and
+  operating natural gas, crude oil, NGL, and refined products pipelines, terminals, and storage facilities.
