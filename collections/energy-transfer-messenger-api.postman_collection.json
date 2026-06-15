@@ -1,0 +1,309 @@
+{
+  "item": [
+    {
+      "id": "945225d4-e233-496d-baa1-0ff5df7376dc",
+      "name": "Nominations",
+      "description": {
+        "content": "Manage gas pipeline nominations.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d700d2a8-9842-48b2-bc2a-0de96128523b",
+          "name": "List nominations",
+          "request": {
+            "name": "List nominations",
+            "description": {
+              "content": "Retrieves a list of gas pipeline nominations submitted by the authenticated shipper, including status, volumes, and pipeline details.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "nominations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2911e406-2e41-427a-9086-db62d0e30edd",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "nominations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e756dcc6-5969-4046-abd0-649b8c28b509",
+          "name": "Create a nomination",
+          "request": {
+            "name": "Create a nomination",
+            "description": {
+              "content": "Submits a new gas pipeline nomination with specified volumes, receipt and delivery points, and scheduling details.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "nominations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"pipelineId\": \"<string>\",\n  \"volume\": \"<number>\",\n  \"receiptPoint\": \"<string>\",\n  \"deliveryPoint\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "6afb151d-65c6-45f2-a7dc-aea7247cd763",
+              "name": "Nomination created successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "nominations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"pipelineId\": \"<string>\",\n  \"volume\": \"<number>\",\n  \"receiptPoint\": \"<string>\",\n  \"deliveryPoint\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "2c752d1c-cdb6-410e-b02b-cc0648ede559",
+      "name": "Pipelines",
+      "description": {
+        "content": "Retrieve pipeline information and status.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "059df3ce-f81c-409a-a7b9-c917ad3e861d",
+          "name": "List pipelines",
+          "request": {
+            "name": "List pipelines",
+            "description": {
+              "content": "Retrieves a list of Energy Transfer pipelines with capacity, status, and operational details.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "pipelines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "edfcac17-c483-43d2-8e8f-61bdee622d17",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "251f754e-13cc-4dc6-aa78-8dc80429ba6b",
+      "name": "Schedules",
+      "description": {
+        "content": "Access gas scheduling and capacity data.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1c396c63-1d2a-4dee-84bb-029e154fb345",
+          "name": "List schedules",
+          "request": {
+            "name": "List schedules",
+            "description": {
+              "content": "Retrieves a list of confirmed gas scheduling data including scheduled quantities and flow dates.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "schedules"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bf8b93d4-89ed-4132-bd4c-b2dc2eaec614",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schedules"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://dev.messenger.energytransfer.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "f3ee7a5d-e8d9-4d93-baeb-44e593c3cb19",
+    "name": "Energy Transfer Messenger+ API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Energy Transfer Messenger+ API provides programmatic access to Energy Transfer's pipeline messaging and gas scheduling platform. The API enables partners and shippers to manage gas nominations, scheduling, and pipeline capacity through automated integrations, reducing processing times from 90 minutes to approximately 12 minutes.",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Energy Transfer Messenger+ API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Nominations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List nominations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://dev.messenger.energytransfer.com/nominations"
+          },
+          "docs": "Retrieves a list of gas pipeline nominations submitted by the authenticated shipper, including status, volumes, and pipeline details."
+        },
+        {
+          "info": {
+            "name": "Create a nomination",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://dev.messenger.energytransfer.com/nominations",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Submits a new gas pipeline nomination with specified volumes, receipt and delivery points, and scheduling details."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Schedules",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List schedules",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://dev.messenger.energytransfer.com/schedules"
+          },
+          "docs": "Retrieves a list of confirmed gas scheduling data including scheduled quantities and flow dates."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Pipelines",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List pipelines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://dev.messenger.energytransfer.com/pipelines"
+          },
+          "docs": "Retrieves a list of Energy Transfer pipelines with capacity, status, and operational details."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
