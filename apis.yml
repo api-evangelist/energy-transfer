@@ -18,6 +18,10 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 common:
+  - type: DomainSecurity
+    url: security/energy-transfer-domain-security.yml
+  - type: Authentication
+    url: authentication/energy-transfer-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/energy-transfer
 apis:
