@@ -1,0 +1,26 @@
+openapi: 3.1.0
+info:
+  title: Energy Transfer Messenger+ Nominations Schedules API
+  description: The Energy Transfer Messenger+ API provides programmatic access to Energy Transfer's pipeline messaging and gas scheduling platform. The API enables partners and shippers to manage gas nominations, scheduling, and pipeline capacity through automated integrations, reducing processing times from 90 minutes to approximately 12 minutes.
+  version: '1.0'
+servers:
+- url: https://dev.messenger.energytransfer.com
+tags:
+- name: Schedules
+  description: Access gas scheduling and capacity data.
+paths:
+  /schedules:
+    get:
+      operationId: listSchedules
+      summary: List schedules
+      description: Retrieves a list of confirmed gas scheduling data including scheduled quantities and flow dates.
+      tags:
+      - Schedules
+      responses:
+        '200':
+          description: Success
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
