@@ -1,0 +1,44 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Energy Transfer Messenger+ Nominations API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Nominations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List nominations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://dev.messenger.energytransfer.com/nominations"
+          },
+          "docs": "Retrieves a list of gas pipeline nominations submitted by the authenticated shipper, including status, volumes, and pipeline details."
+        },
+        {
+          "info": {
+            "name": "Create a nomination",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://dev.messenger.energytransfer.com/nominations",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Submits a new gas pipeline nomination with specified volumes, receipt and delivery points, and scheduling details."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

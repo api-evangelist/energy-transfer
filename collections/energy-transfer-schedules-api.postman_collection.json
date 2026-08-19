@@ -1,0 +1,90 @@
+{
+  "item": [
+    {
+      "id": "528f2a19-cc72-4fef-8984-5e739fea4e3b",
+      "name": "Schedules",
+      "description": {
+        "content": "Access gas scheduling and capacity data.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7df75e0f-70ef-45c5-9db2-a0d4ae586aec",
+          "name": "List schedules",
+          "request": {
+            "name": "List schedules",
+            "description": {
+              "content": "Retrieves a list of confirmed gas scheduling data including scheduled quantities and flow dates.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "schedules"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "50eb9189-4753-479f-ab7c-9610d852fcef",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schedules"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://dev.messenger.energytransfer.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "1178d418-0228-4667-8470-24f01979794b",
+    "name": "Energy Transfer Messenger+ Nominations Schedules API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Energy Transfer Messenger+ API provides programmatic access to Energy Transfer's pipeline messaging and gas scheduling platform. The API enables partners and shippers to manage gas nominations, scheduling, and pipeline capacity through automated integrations, reducing processing times from 90 minutes to approximately 12 minutes.",
+      "type": "text/plain"
+    }
+  }
+}

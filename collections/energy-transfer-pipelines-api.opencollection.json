@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Energy Transfer Messenger+ Nominations Pipelines API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Pipelines",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List pipelines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://dev.messenger.energytransfer.com/pipelines"
+          },
+          "docs": "Retrieves a list of Energy Transfer pipelines with capacity, status, and operational details."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

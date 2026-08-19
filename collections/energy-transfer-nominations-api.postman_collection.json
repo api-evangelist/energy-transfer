@@ -1,0 +1,171 @@
+{
+  "item": [
+    {
+      "id": "600bed9c-e99c-4d20-a05b-e135c39b4220",
+      "name": "Nominations",
+      "description": {
+        "content": "Manage gas pipeline nominations.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a3cd4ef0-177d-4968-ba2c-7a73b549ccd7",
+          "name": "List nominations",
+          "request": {
+            "name": "List nominations",
+            "description": {
+              "content": "Retrieves a list of gas pipeline nominations submitted by the authenticated shipper, including status, volumes, and pipeline details.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "nominations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "526db684-1180-43c3-a2ec-688dbc0336b5",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "nominations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "40aa8577-e21d-487a-8d96-92d43109955f",
+          "name": "Create a nomination",
+          "request": {
+            "name": "Create a nomination",
+            "description": {
+              "content": "Submits a new gas pipeline nomination with specified volumes, receipt and delivery points, and scheduling details.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "nominations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"pipelineId\": \"<string>\",\n  \"volume\": \"<number>\",\n  \"receiptPoint\": \"<string>\",\n  \"deliveryPoint\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "5fc1172b-bb6b-4741-91f7-c72d5f748c42",
+              "name": "Nomination created successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "nominations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"pipelineId\": \"<string>\",\n  \"volume\": \"<number>\",\n  \"receiptPoint\": \"<string>\",\n  \"deliveryPoint\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://dev.messenger.energytransfer.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "3b22491a-9c2d-4885-8b46-39ae45351ffc",
+    "name": "Energy Transfer Messenger+ Nominations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Energy Transfer Messenger+ API provides programmatic access to Energy Transfer's pipeline messaging and gas scheduling platform. The API enables partners and shippers to manage gas nominations, scheduling, and pipeline capacity through automated integrations, reducing processing times from 90 minutes to approximately 12 minutes.",
+      "type": "text/plain"
+    }
+  }
+}

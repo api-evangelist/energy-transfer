@@ -1,0 +1,90 @@
+{
+  "item": [
+    {
+      "id": "d76c767f-03ec-4ffd-8425-cfcb43930c7c",
+      "name": "Pipelines",
+      "description": {
+        "content": "Retrieve pipeline information and status.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9b2399ea-3bf5-4ff5-aaff-d9064f56c1bd",
+          "name": "List pipelines",
+          "request": {
+            "name": "List pipelines",
+            "description": {
+              "content": "Retrieves a list of Energy Transfer pipelines with capacity, status, and operational details.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "pipelines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "005c74d7-2424-4ab1-9222-2f0edf228940",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://dev.messenger.energytransfer.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "a175cc52-a064-40db-885c-c878d1ade309",
+    "name": "Energy Transfer Messenger+ Nominations Pipelines API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Energy Transfer Messenger+ API provides programmatic access to Energy Transfer's pipeline messaging and gas scheduling platform. The API enables partners and shippers to manage gas nominations, scheduling, and pipeline capacity through automated integrations, reducing processing times from 90 minutes to approximately 12 minutes.",
+      "type": "text/plain"
+    }
+  }
+}
