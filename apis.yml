@@ -14,16 +14,17 @@ deliveryModel:
   method: derived
 accessModel:
   pricing: unknown
-  onboarding: self-serve
+  onboarding: unknown
   trial: false
   try_now: false
   public: false
-  label: Self-serve signup
-  confidence: high
+  label: Unknown
+  confidence: low
   source:
   - plans
   - authentication
-  generated: '2026-07-22'
+  - security
+  generated: '2026-09-03'
   method: derived
 modified: '2026-05-19'
 tags:
@@ -36,7 +37,7 @@ kind: contract
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/energy-transfer.png
 access: 3rd-Party
 created: '2026-03-21'
-position: Consumer
+position: Consuming
 specificationVersion: '0.23'
 maintainers:
   - FN: Kin Lane
