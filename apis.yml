@@ -26,13 +26,13 @@ accessModel:
   - security
   generated: '2026-09-03'
   method: derived
-modified: '2026-05-19'
+modified: '2026-09-16'
 tags:
-  - Energy
-  - Pipelines
-  - Midstream
-  - Gas Scheduling
-  - Fortune 100
+- Energy
+- Pipelines
+- Midstream
+- Gas Scheduling
+- Fortune 100
 kind: contract
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/energy-transfer.png
 access: 3rd-Party
@@ -40,17 +40,19 @@ created: '2026-03-21'
 position: Consuming
 specificationVersion: '0.23'
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
 common:
-  - type: AgenticAccess
-    url: agentic-access/energy-transfer-agentic-access.yml
-  - type: DomainSecurity
-    url: security/energy-transfer-domain-security.yml
-  - type: Authentication
-    url: authentication/energy-transfer-authentication.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/energy-transfer
+- type: Website
+  url: https://energytransfer.com
+- type: AgenticAccess
+  url: agentic-access/energy-transfer-agentic-access.yml
+- type: DomainSecurity
+  url: security/energy-transfer-domain-security.yml
+- type: Authentication
+  url: authentication/energy-transfer-authentication.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/energy-transfer
 apis:
 - aid: energy-transfer:energy-transfer-nominations-api
   name: Energy Transfer Nominations API
@@ -88,6 +90,6 @@ apis:
     url: openapi/energy-transfer-schedules-api-openapi.yml
   - type: Documentation
     url: https://dev.messenger.energytransfer.com/
-description: >-
-  Energy Transfer is one of the largest and most diversified midstream energy companies in North America, owning and
-  operating natural gas, crude oil, NGL, and refined products pipelines, terminals, and storage facilities.
+description: Energy Transfer is one of the largest and most diversified midstream energy companies in
+  North America, owning and operating natural gas, crude oil, NGL, and refined products pipelines, terminals,
+  and storage facilities.
