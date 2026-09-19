@@ -84,6 +84,8 @@ apis:
   humanURL: https://dev.messenger.energytransfer.com/
   baseURL: https://dev.messenger.energytransfer.com
   tags:
+  - Schedule
+  tags_raw:
   - Schedules
   properties:
   - type: OpenAPI
