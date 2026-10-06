@@ -26,7 +26,7 @@ accessModel:
   - security
   generated: '2026-09-03'
   method: derived
-modified: '2026-09-16'
+modified: '2026-10-06'
 tags:
 - Energy
 - Pipelines
@@ -44,6 +44,8 @@ maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 common:
+- url: https://www.energytransfer.com/news/
+  type: Blog
 - type: Website
   url: https://energytransfer.com
 - type: AgenticAccess
