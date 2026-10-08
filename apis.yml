@@ -44,6 +44,12 @@ maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 common:
+- type: Plans
+  url: plans/energy-transfer-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/energy-transfer-rate-limits.yml
+- type: FinOps
+  url: finops/energy-transfer-finops.yml
 - url: https://www.energytransfer.com/news/
   type: Blog
 - type: Website
