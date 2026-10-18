@@ -44,6 +44,9 @@ maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 common:
+- type: CapabilityMap
+  url: capabilities/energy-transfer-capability-edges.yml
+  name: Energy Transfer Business Capability Map
 - type: Plans
   url: plans/energy-transfer-plans-pricing.yml
 - type: RateLimits
