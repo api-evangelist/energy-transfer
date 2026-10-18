@@ -1,0 +1,35 @@
+slug: energy-transfer
+provider: Energy Transfer
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Oil & Gas
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Nominations
+  spec_file: energy-transfer-nominations-api-openapi.yml
+  capability_id: BC-3060.40
+  capability_id_l1: BC-3060
+  capability_name: Pipeline Scheduling & Nominations
+  confidence: 0.92
+  evidence: POST /nominations  createNomination; 'enables partners and shippers to manage gas nominations,
+    scheduling, and pipeline capacity'
+  reason: Creating and listing gas nominations on a midstream pipeline messaging platform is exactly capacity
+    nomination for transported volumes under Pipeline Scheduling & Nominations.
+- tag: Schedules
+  spec_file: energy-transfer-schedules-api-openapi.yml
+  capability_id: BC-3060.40
+  capability_id_l1: BC-3060
+  capability_name: Pipeline Scheduling & Nominations
+  confidence: 0.85
+  evidence: GET /schedules  listSchedules; 'pipeline messaging and gas scheduling platform'
+  reason: Schedules in this API are the confirmed gas scheduling output against nominations on the pipeline,
+    which is Pipeline Scheduling & Nominations. Only one read operation is exposed, hence slightly reduced
+    confidence.
