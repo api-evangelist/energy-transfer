@@ -1,4 +1,4 @@
-# Energy Transfer (energy-transfer)
+# Energy Transfer
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,53 +66,118 @@
 
 Energy Transfer is one of the largest and most diversified midstream energy companies in North America, owning and operating natural gas, crude oil, NGL, and refined products pipelines, terminals, and storage facilities.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/energy-transfer/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/energy-transfer/refs/heads/main/apis.yml)
+**Areas:** Energy · Pipelines · Midstream · Gas Scheduling · Fortune 100 · Oil and Gas
 
-## Scope
+## Energy Transfer on APIs.io
 
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Energy Transfer is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/energy-transfer/](https://apis.io/providers/energy-transfer/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (3)
 
-- Energy
-- Pipelines
-- Midstream
-- Gas Scheduling
+- [Energy Transfer Nominations API](https://apis.io/apis/energy-transfer/energy-transfer-nominations-api/) — Manage gas pipeline nominations.
+- [Energy Transfer Pipelines API](https://apis.io/apis/energy-transfer/energy-transfer-pipelines-api/) — Retrieve pipeline information and status.
+- [Energy Transfer Schedules API](https://apis.io/apis/energy-transfer/energy-transfer-schedules-api/) — Access gas scheduling and capacity data.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Energy Transfer Messenger+ API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Energy Transfer Messenger+ API provides programmatic access to Energy Transfer's pipeline messaging and gas scheduling platform. Energy Transfer operates one of the largest pipeline networks in the United States, and the Messenger+ platform enables partners and shippers to manage gas scheduling, nominations, and pipeline capacity through automated API integrations, significantly reducing manual processing times.
+- [Energy Transfer Agentic Access](https://apis.io/agentic-access/energy-transfer/energy-transfer-agentic-access/)
 
-- **Human URL:** [https://dev.messenger.energytransfer.com/](https://dev.messenger.energytransfer.com/)
-- **Base URL:** `https://dev.messenger.energytransfer.com`
+#### Collections (4)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Energy
-- Gas Scheduling
-- Messaging
-- Pipelines
+- [Energy Transfer Messenger+ API](https://apis.io/collections/energy-transfer/open-energy-transfer-messenger-api/)
+- [Energy Transfer Messenger+ Nominations API](https://apis.io/collections/energy-transfer/open-energy-transfer-nominations-api/)
+- [Energy Transfer Messenger+ Nominations Pipelines API](https://apis.io/collections/energy-transfer/open-energy-transfer-pipelines-api/)
+- [Energy Transfer Messenger+ Nominations Schedules API](https://apis.io/collections/energy-transfer/open-energy-transfer-schedules-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://dev.messenger.energytransfer.com/)
-- [OpenAPI](openapi/energy-transfer-messenger-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/energy-transfer-messenger-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/energy-transfer-messenger-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Energy Transfer Authentication](https://apis.io/security/energy-transfer/energy-transfer-authentication/)
+- [Energy Transfer Domain Security](https://apis.io/security/energy-transfer/energy-transfer-domain-security/)
 
-- [LinkedIn](https://www.linkedin.com/company/energy-transfer)
+#### Plans and pricing (1)
 
-## Maintainers
+Published plans, tiers and prices.
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- [Energy Transfer Plans Pricing](https://apis.io/plans/energy-transfer/energy-transfer-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Energy Transfer Rate Limits](https://apis.io/rate-limits/energy-transfer/energy-transfer-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Energy Transfer Finops](https://apis.io/finops/energy-transfer/energy-transfer-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://energytransfer.com)
+- [Blog](https://www.energytransfer.com/news/)
+
+## API Evangelist rating
+
+**Kin Score 23.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 44.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 5.3 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/energy-transfer/](https://apis.io/providers/energy-transfer/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Energy Transfer: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/energy-transfer/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
